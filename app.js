@@ -26,10 +26,32 @@ boolean = boolean.toLocaleLowerCase() === "true";
 if (boolean) {
     p4.innerHTML = "la valeur est true";
 }
-
 else {
     p4.innerHTML = "la valeur est false";
 }
+
+let number2 = p5.dataset.number2 = '42';
+p5.innerHTML = (Number.parseInt(number2) + 10).toString();
+
+let chaine2 = p6.dataset.chaine2 = 'ma chaine simple';
+p6.innerHTML = chaine2.length.toString();
+
+let tableau2 = p7.dataset.tableau2 = '[4,5,6,8]'.split(',');
+for (let elemm of tableau2) {
+    p7.innerHTML += "<br>" + elemm.trim()
+}
+
+let boolean2 = p8.dataset.boolean2 = "true";
+boolean2 = boolean2.toLocaleLowerCase() === "false";
+if (boolean2) {
+    p8.innerHTML = "La valeur est true";
+}
+else {
+    p8.innerHTML = "La valeur est false";
+}
+
+
+
 
 
 
